@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ACG</string>
+    <string name="circle">circle</string>
+    <string name="ellipse">ellipse</string>
+    <string name="rectangle">rectangle</string>
+    <string name="circled_rectangle">circled rectangle</string>
+    <string name="line">line</string>
 </resources>

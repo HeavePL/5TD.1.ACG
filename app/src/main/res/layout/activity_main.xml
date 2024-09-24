@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
+
     >
 
-    <com.example.acg.Kola
-        android:id="@+id/kwadraty6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="clicked" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.acg.Figura
+                style="@style/my_style"
+                android:id="@+id/figura"
+                android:contentDescription="@string/circle" />
+
+            <com.example.acg.Figura
+                style="@style/my_style"
+                android:id="@+id/figura1"
+                android:contentDescription="@string/ellipse" />
+
+            <com.example.acg.Figura
+                style="@style/my_style"
+                android:id="@+id/figura2"
+                android:contentDescription="@string/rectangle" />
+
+            <com.example.acg.Figura
+                style="@style/my_style"
+                android:id="@+id/figura3"
+                android:contentDescription="@string/circled_rectangle" />
+
+            <com.example.acg.Figura
+                style="@style/my_style"
+                android:id="@+id/figura4"
+                android:contentDescription="@string/line" />
+        </LinearLayout>
+
+</ScrollView>
